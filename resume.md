@@ -50,7 +50,7 @@ Bachelor of Science – Computer Science Major (Co-op)  <span style="float:right
 
  - Communications Director, _Student Council,_ _St. John’s Residence_ <span style="float:right">_2018 – 19_</span>
  - Hall Representative, _Student Council, St. John’s Residence_ <span style="float:right">_2017 – 18_</span>
- - Participant, _Manitoba Programming Contest <span style="float:right">2016, 2018_</span>
+ - Participant, _Manitoba Programming Contest_ <span style="float:right">_2016, 2018_</span>
  - Webmaster, _Delta Kappa Epsilon_ <span style="float:right">_2016 – 17_</span>
  - Treasurer, _Student Council, Goose Lake High_ <span style="float:right">_2014 – 15_</span>
 
