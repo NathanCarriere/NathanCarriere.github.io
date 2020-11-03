@@ -18,7 +18,7 @@ This article will go over the basics of using Markdown, a Markdown editor, Githu
 
 - [Frequently Asked Questions](#FAQ)
 
-- [Why build a site this way?]()
+- [A note on Andrew Etter's *Modern Technical Writing*]()
 
 - [Conclusion]()
 
@@ -142,7 +142,27 @@ The moment we've all been waiting for. Now that we know all our components, here
 
 8. Your resume should now be visible on Github Pages at RepositoryName/FileName. In my case, since I named my resume file `resume.md` and in the main folder of the repository, I was able to access it at `https://nathancarriere.github.io/resume`
 
-### FAQ
+
+
+### A note on Andrew Etter's *Modern Technical Writing*
+
+I can already hear you asking, "Why bother setting up a site this way?" That's a good question, thanks for asking. 
+
+This guide is heavily based on Andrew Etter's book, [*Modern Technical Writing*]((https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS). There are some very advantageous features of this type of setup. Some of Etter's recommendations we used include:
+
+- Using lightweight markup. Etter recommends this because it is easier to read and write and so is accessible to a wider range of people, which means that more people can contribute to documentation. 
+
+- Using Markdown. Etter recommends this because it is the most widely used lightweight markup language, and so it has more text editors than other lightweight markup languages and is likely more future-proofed.
+
+- Using distributed version control. Etter recommends this because it provides better performance, facilitates concurrent work on the same file, and makes "undos" quite simple. This also helps keep your documentation up to date, since a developer or tester can make a pull request upon making a change or upon noticing that something is out of date.
+
+- Using a static website. Etter recommends this because static sites are very simple and are not prone to crashing or being hacked.
+
+- Using a static site generator. Etter recommends this because it allows you to create a beautiful and highly functional website with minimal effort. This saves lots of time on your end. 
+
+### 
+
+### Frequently Asked Questions
 
 ###### Why is Markdown better than a word processor?
 
@@ -150,4 +170,4 @@ The moment we've all been waiting for. Now that we know all our components, here
 
 **I can see the README on Github Pages but not my resume. What's wrong?**
 
-- If this is the case, there's a good chance you're just looking at the wrong URL. You can access different "pages" of your site by changing it from, 
+- If this is the case, there's a good chance you're just looking at the wrong URL. For example instead of viewing `https://www.RepositoryName`, you might want to go to `https://www.RepositoryName/`. 
