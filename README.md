@@ -4,4 +4,4 @@
 
 See Assignment "readme" [here](7790382_A2_readme.md)
 
-See Assignment reasume [here](7790382_A2_resume)
+See Assignment resume [here](7790382_A2_resume)

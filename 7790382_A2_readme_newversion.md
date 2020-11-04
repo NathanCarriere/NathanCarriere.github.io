@@ -7,22 +7,14 @@ The goal of this article is to teach and demonstrate the key principles of [*Mod
 ### Table of Contents
 
 - [Prerequisites](#prerequisites)
-  
-  - 
 
-- [Markdown](#Markdown)
-  
-  - [Markdown editors](#markdown-editors)
+- [Instructions](#instructions)
 
-- Step by step guide
+- [Frequently Asked Questions](#frequently-asked-questions)
 
-- [Frequently Asked Questions](#FAQ)
+- [More Resources](#more-resources)
 
-- A note on Andrew Etter's *Modern Technical Writing*
-
-- Conclusion
-
-
+- [Authors and Acknowledgements](#authors-and-acknowledgements)
 
 ### Prerequisites
 
@@ -40,146 +32,55 @@ The goal of this article is to teach and demonstrate the key principles of [*Mod
     
     - *Using lightweight markup is key principle of Etter's book. Etter recommends this because it is easier to read and write and so is accessible to a wider range of people, which means that more people can contribute to documentation. Etter recommends Markdown because it is the most widely used lightweight markup language and is likely more future-proofed.*
 
-
-
 ### Instructions
 
 This is a step-by-step demonstration on how to use *Modern Technical Writing*'s key principles to host a resume on Github Pages.
 
-1. Create a new Github repository called `[YourUsername].github.io`, commit your Markdown-formatted resume to your local repository, and push to the remote repository.
+1. Create a new Github repository called `[YourUsername].github.io`
    
-   - If you're unfamiliar with git and are using Github Desktop:
+   - If using Github Desktop, a new repository can be created through File > Create New Repository. Set the repository name to `[YourUsername].github.io`.
      
-     1. A new repository can be created through File > Create New Repository. Set the repository name to `[YourUsername].github.io`.
-     
-              ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\New%20Repository.png)
-     
-     2. Once a repository has been created, the centre of the Github Desktop interface should say something along the lines of "No local changes". If that is the case, click the "Show in Explorer" button in the middle of your interface and move your markdown-formatted resume into the folder that is presented to you. Once this is done, you should see your file changes appear on the left of the interface.![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Github%20file%20explorer.png)
-     
-     
-     
-     3. [Commit](https://github.com/git-guides/git-commit) your changes using the "commit" panel at the bottom left
-        
-         ![commit panel](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Committing.png)
-     
-     4. To [push](https://www.atlassian.com/git/tutorials/syncing/git-push#:~:text=The%20git%20push%20command%20is,exports%20commits%20to%20remote%20branches.) your changes, press "push". The button should appear after all your changes have been committed. This may sometimes require you to "pull" first. If that is the case, then feel free to click "pull" before you push. ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Pushing.png)
+              ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\New%20Repository.png) 
+- *Why use Github?*
+  
+  - *Github corresponds to Etter's key principle on using distributed version control. Etter recommends this because it provides better performance, facilitates concurrent work on the same file, and makes "undo-ing" things quite simple. It also makes your job easier, since a developer, tester, or expert user can make pull requests to the documentation upon noticing something is incorrect or out of date.*
+2. Commit your markdown-formatted resume to your Github repository. 
    
-   - *Why use Github?*
+   - If using Github Desktop: 
      
-     - *Github corresponds to Etter's key principle on using distributed version control. Etter recommends this because it provides better performance, facilitates concurrent work on the same file, and makes "undo-ing" things quite simple. It also makes your job easier, since a developer, tester, or expert user can make pull requests to the documentation upon noticing something is incorrect or out of date.*
+     - You can use "Show in Explorer" to move your resume to the local repository.![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Github%20file%20explorer.png)
+     
+     - Once your resume is added to your local repository, you can [commit](https://github.com/git-guides/git-commit) your changes using the "commit" panel at the bottom left
+       
+           ![commit panel](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Committing.png)
 
-2. Your resume should now be on a Github repository. Navigate to this in a browser by visiting github.com/[YourUsername]/[YourRepositoryName]. All your uploaded files should  be visible from there.  
+3. Push to the remote repository. 
+   
+   - If using Github Desktop:
+     
+     - To [push](https://www.atlassian.com/git/tutorials/syncing/git-push#:~:text=The%20git%20push%20command%20is,exports%20commits%20to%20remote%20branches.) your changes, press "push". The button should appear after all your changes have been committed. This may sometimes require you to "pull" first. If that is the case, then feel free to click "pull" before you push. ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Pushing.png)
 
-3. Now we will set up Github Pages and Jekyll.
+4. Your resume should now be on a Github repository. Navigate to this in a browser by visiting github.com/[YourUsername]/[YourRepositoryName]. All your uploaded files should  be visible from there.  
+
+5. Now we will set up Github Pages and Jekyll
    
-   1. Navigate to Github settings.
-      
-      ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Settings%20on%20Github.png)
+   - .Navigate to Github settings.![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Settings%20on%20Github.png)
    
-   2. Scroll to the "GitHub Pages" section and press "Change Theme". Choose any theme for now. You can always come back and change it later. 
-      
-      ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\change%20theme.png)
+   - Scroll to the "GitHub Pages" section and press "Change Theme". Choose any theme for now. You can always come back and change it later. ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\change%20theme.png)
+   
    - *Why use Github Pages and Jekyll?*
      
      - *Github Pages corresponds to Etter's key principle on using static websites. Etter recommends static sites because they are very simple and are not prone to crashing or being hacked.*
      
      - *Jekyll corresponds to Etter's key principle on using static site generators. Etter recommends these because they can help you create highly functional and beautiful static sites with minimal effort.*
 
-4. Your resume should now be visible on Github Pages at `[RepositoryName]/[FileName]`. It might take a few minutes. In my case, I was able to view my resume at `https://nathancarriere.github.io/7790382_A2_resume` since I named my resume file `7790382_A2_resume.md` and my repository `NathanCarriere.github.io`. [Check it out](https://nathancarriere.github.io/7790382_A2_resume)!
 
-### Introduction
 
-#### Motivation
+6. Your resume should now be visible on Github Pages at `[RepositoryName]/[FileName]`. It might take a few minutes. In my case, I was able to view my resume at `https://nathancarriere.github.io/7790382_A2_resume` since I named my resume file `7790382_A2_resume.md` and my repository `NathanCarriere.github.io`. [Check it out](https://nathancarriere.github.io/7790382_A2_resume)!
 
-"What's the point?" is often the first question I ask whenever learning something. Let's address this immediately. Here are some reasons to consider hosting a resume on Github:
 
-- It shows technical proficiency.
 
-- It shows initiative.
-
-- It provides a convenient place to display side projects.
-
-- It's quite easy to learn how to do.
-
-- It gives you valuable practice in increasingly popular tools.
-
-#### Technology Overview
-
-"What tools do I need?" is often the second question I ask. Here's a quick overview of the technology we'll be looking at:
-
-- [Markdown](https://en.wikipedia.org/wiki/Markdown): a lightweight [markup language](https://en.wikipedia.org/wiki/Markup_language) which has recently become quite popular. It is designed to be easy to write, read, and learn. The existence of markdown editors means that you don't even need to know the syntax to get started!
-
-- [Marktext](https://github.com/marktext/marktext/blob/develop/README.md): a markdown editor. Markdown editors allow you to write markdown without much prerequisite knowledge. This specific editor is not required - other editors are acceptable (just ensure they use [GitHub Flavored Markdown](https://github.github.com/gfm/), or Github may give you difficulties).
-
-- [GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages) is a [static site](https://en.wikipedia.org/wiki/Static_web_page) [hosting service](https://en.wikipedia.org/wiki/Web_hosting_service) that takes files from Github and uses them to publish a website. It is quite intuitive once you get the hang of it. This can be used to publish things such as resume's.
-
-- [Jekyll](https://en.wikipedia.org/wiki/Jekyll_(software)) is a static site generator that is built-in to Github Pages. We won't go into much more detail than is required to use this, but links to guides will be provided.
-
-#### Markdown
-
-[Markdown](https://en.wikipedia.org/wiki/Markdown) has a plethora of concise online tutorials/references. For a quick two-minute introduction, see either [this quick reference](https://wordpress.com/support/markdown-quick-reference/) or [this quick guide](https://guides.github.com/features/mastering-markdown/). For something more in-depth, see [here](https://www.markdowntutorial.com/). In my experience, I think that a good Markdown editor plus some Google searches is really all you need to know about syntax to get going. Here is a quick rundown on the most important details:
-
-- Markdown was designed to be easy to read and easy to learn.
-
-- Markdown has many "flavours". These are slightly different implementations of the specification, tailored to different needs and specifications. We will use [GitHub Flavored Markdown](https://github.github.com/gfm/) because we will be hosting on [GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages)
-
-- Markdown is easy to use.
-
-- Did I mention Markdown is easy to use? You don't even need to understand the syntax to begin writing it. The existence of Markdown editors means that, if you can use a basic text editor, then you can write Markdown!
-
-- Google is your friend. If you're trying to format something, it's almost guaranteed that someone else had the same problem.
-
-#### Markdown editors
-
-Regardless of the individual, some sort of text editor will need to be used to write Markdown. If you will be spending significant time writing Markdown, it is important that you select one that will improve your productivity.
-
-A good Markdown editor will (in my opinion):
-
-- Show you a preview of your Markdown as you write.
-
-- Provide keyboard shortcuts (eg. being able to use `ctrl+b` to add bold tags).
-
-- Offer auto-complete features (these improve productivity in the long run).
-
-- Write in the flavour of Markdown that you intend on using.
-
-- Require as few syntax Google searches as possible.
-
-There are many Markdown editors which satisfy these requirements, but one that I would recommend is [Marktext](https://github.com/marktext/marktext/blob/develop/README.md). If you can use Microsoft Word, then you can use Marktext.
-
-#### Github Pages
-
-[GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages) is a [static site](https://en.wikipedia.org/wiki/Static_web_page) [hosting service](https://en.wikipedia.org/wiki/Web_hosting_service) that takes files from Github and uses them to publish a website. We will use this to host our resume.
-
-#### Jekyll
-
-Jekyll is a software tool that can take some Markdown, and produce a static website. For the purposes of this tutorial, you don't really need to know much else. We will use the built-in features of Github Pages to apply Jekyll.
-
-#### Github Desktop
-
-I recommend using this if you are unfamiliar with Git. This will make it much easier to create a Github repository.
-
-### Step by Step Guide
-
-The moment we've all been waiting for. Now that we know all our components, here is a step by step guide for hosting your resume on Github Pages:
-
-1. 
-
-### A note on Andrew Etter's *Modern Technical Writing*
-
-I can already hear you asking, "Why bother setting up a site this way?" That's a good question, thanks for asking.
-
-This guide is heavily based on Andrew Etter's book, [*Modern Technical Writing*]((https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS). There are some very advantageous features of this type of setup. Some of Etter's recommendations we used include:
-
-- Using lightweight markup. Etter recommends this because it is easier to read and write and so is accessible to a wider range of people, which means that more people can contribute to documentation.
-
-- Using Markdown. Etter recommends this because it is the most widely used lightweight markup language, and so it has more text editors than other lightweight markup languages and is likely more future-proofed.
-
-- Using distributed version control. Etter recommends this because it provides better performance, facilitates concurrent work on the same file, and makes "undos" quite simple. This also helps keep your documentation up to date, since a developer or tester can make a pull request upon making a change or upon noticing that something is out of date.
-
-- Using a static website. Etter recommends this because static sites are very simple and are not prone to crashing or being hacked.
-
-- Using a static site generator. Etter recommends this because it allows you to create a beautiful and highly functional website with minimal effort. This saves lots of time on your end.
+![gif of resume](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\resume_gif.gif)
 
 ### Frequently Asked Questions
 
@@ -207,4 +108,12 @@ This guide is heavily based on Andrew Etter's book, [*Modern Technical Writing*]
   
   - Tamunotonye Dawari
 
-- Jekyll theme: [GitHub - slatedocs/slate: Beautiful static documentation for your API](https://github.com/slatedocs/slate)
+- Jekyll theme: [slate](https://github.com/slatedocs/slate)
+
+- Template credit: 
+  
+  - University of Manitoba
+  
+  - Course: COMP 3040 A01, Fall 2020
+  
+  - Course Instructor: Christina Penner
