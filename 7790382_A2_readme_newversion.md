@@ -2,19 +2,17 @@
 
 ### Purpose
 
-The goal of this article is to teach and demonstrate the key principles of [*Modern Technical Writing*](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS) by Andrew Etter. This will be done by instructing the reader how to host a resume on [GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages). This assumes a novice level of computer science knowledge with no Markdown or Github experience required. the end of this, you should be able to use Markdown, a Markdown editor, Github Pages, and Jekyll to host a resume on a [static site](https://en.wikipedia.org/wiki/Static_web_page). This assumes a novice level of computer science knowledge. No experience with Markdown or Github required.
+The goal of this article is to teach and demonstrate the key principles of [*Modern Technical Writing*](https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS) by Andrew Etter. This will be done by instructing the reader how to host a resume on [GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/about-github-pages). This assumes a novice level of computer science knowledge with no Markdown or Github experience required. This is intended for Windows users.
 
 ### Table of Contents
 
-- Introduction
+- [Prerequisites](#prerequisites)
   
-  - [Markdown](#Markdown)
+  - 
+
+- [Markdown](#Markdown)
   
   - [Markdown editors](#markdown-editors)
-  
-  - Github Pages
-  
-  - Jekyll
 
 - Step by step guide
 
@@ -34,15 +32,60 @@ The goal of this article is to teach and demonstrate the key principles of [*Mod
 
 - Have [Marktext](https://github.com/marktext/marktext/blob/develop/README.md) downloaded (or some other Markdown editor capable of editing [GitHub Flavored Markdown](https://github.github.com/gfm/)).
 
-- If you are unfamiliar with Git and don't want to bother with its command line interface, download [Github Desktop](https://desktop.github.com/).
+- Have [Github Desktop](https://desktop.github.com/) downloaded if you're unfamiliar with using git.
 
 - A Markdown-formatted resume (I recommend using the Marktext editor for this - if you can use Microsoft Word, then you can write a resume in Marktext). 
+  
+  - *Why use Markdown?*
+    
+    - *Using lightweight markup is key principle of Etter's book. Etter recommends this because it is easier to read and write and so is accessible to a wider range of people, which means that more people can contribute to documentation. Etter recommends Markdown because it is the most widely used lightweight markup language and is likely more future-proofed.*
 
 
 
 ### Instructions
 
+This is a step-by-step demonstration on how to use *Modern Technical Writing*'s key principles to host a resume on Github Pages.
 
+1. Create a new Github repository called `[YourUsername].github.io`, commit your Markdown-formatted resume to your local repository, and push to the remote repository.
+   
+   - If you're unfamiliar with git and are using Github Desktop:
+     
+     1. A new repository can be created through File > Create New Repository. Set the repository name to `[YourUsername].github.io`.
+     
+              ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\New%20Repository.png)
+     
+     2. Once a repository has been created, the centre of the Github Desktop interface should say something along the lines of "No local changes". If that is the case, click the "Show in Explorer" button in the middle of your interface and move your markdown-formatted resume into the folder that is presented to you. Once this is done, you should see your file changes appear on the left of the interface.![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Github%20file%20explorer.png)
+     
+     
+     
+     3. [Commit](https://github.com/git-guides/git-commit) your changes using the "commit" panel at the bottom left
+        
+         ![commit panel](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Committing.png)
+     
+     4. To [push](https://www.atlassian.com/git/tutorials/syncing/git-push#:~:text=The%20git%20push%20command%20is,exports%20commits%20to%20remote%20branches.) your changes, press "push". The button should appear after all your changes have been committed. This may sometimes require you to "pull" first. If that is the case, then feel free to click "pull" before you push. ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Pushing.png)
+   
+   - *Why use Github?*
+     
+     - *Github corresponds to Etter's key principle on using distributed version control. Etter recommends this because it provides better performance, facilitates concurrent work on the same file, and makes "undo-ing" things quite simple. It also makes your job easier, since a developer, tester, or expert user can make pull requests to the documentation upon noticing something is incorrect or out of date.*
+
+2. Your resume should now be on a Github repository. Navigate to this in a browser by visiting github.com/[YourUsername]/[YourRepositoryName]. All your uploaded files should  be visible from there.  
+
+3. Now we will set up Github Pages and Jekyll.
+   
+   1. Navigate to Github settings.
+      
+      ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\Settings%20on%20Github.png)
+   
+   2. Scroll to the "GitHub Pages" section and press "Change Theme". Choose any theme for now. You can always come back and change it later. 
+      
+      ![](C:\Users\Nathan\Documents\GitHub\COMP-3040-A2\Pictures\change%20theme.png)
+   - *Why use Github Pages and Jekyll?*
+     
+     - *Github Pages corresponds to Etter's key principle on using static websites. Etter recommends static sites because they are very simple and are not prone to crashing or being hacked.*
+     
+     - *Jekyll corresponds to Etter's key principle on using static site generators. Etter recommends these because they can help you create highly functional and beautiful static sites with minimal effort.*
+
+4. Your resume should now be visible on Github Pages at `[RepositoryName]/[FileName]`. It might take a few minutes. In my case, I was able to view my resume at `https://nathancarriere.github.io/7790382_A2_resume` since I named my resume file `7790382_A2_resume.md` and my repository `NathanCarriere.github.io`. [Check it out](https://nathancarriere.github.io/7790382_A2_resume)!
 
 ### Introduction
 
@@ -120,35 +163,7 @@ I recommend using this if you are unfamiliar with Git. This will make it much ea
 
 The moment we've all been waiting for. Now that we know all our components, here is a step by step guide for hosting your resume on Github Pages:
 
-1. Get a resume
-
-2. Download [Marktext](https://github.com/marktext/marktext/blob/develop/README.md)
-
-3. Use Marktext to write your resume in Markdown. This should be about as easy as using Microsoft Word. If you get stuck on something, remember that Google is your friend.
-
-4. Once you have a Markdown-formatted resume, it is time to upload it to a Github repository. See [this guide](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/) or other guides if you're unfamiliar with Git or Github.
-   
-   1. You will need a [Github](https://github.com/) account to get started.
-   
-   2. If you're unfamiliar with Git, I recommend downloading [Github Desktop](https://desktop.github.com/) to simplify things.
-   
-   3. Create a new repository. In Github Desktop on Windows, this is done through File > Create New Repository.
-   
-   4. [Commit](https://github.com/git-guides/git-commit) your changes to your local repository. This is done through the "commit" button at the bottom left of Github Desktop.
-   
-   5. [Push]((https://www.atlassian.com/git/tutorials/syncing/git-push#:~:text=The%20git%20push%20command%20is,exports%20commits%20to%20remote%20branches.)) your resume to your repository. In Github Desktop, this is done by moving your resume Markdown file into the repository's folder, and then clicking "push to origin" in the Github Desktop interface (you may need to "fetch" first)
-
-5. Provided you didn't get any errors uploading, your resume should now be on a Github repository.
-
-6. Navigate to your Github repository at github.com/YourUsername/YourRepositoryName using a web browser. You can view all your uploaded files there. 
-
-7. Now we will set up Github Pages and Jekyll.
-   
-   1. Navigate to Github settings.
-   
-   2. Scroll to the "GitHub Pages" section and press "Change Theme". This will let you choose some theme. Choose any theme for now, if you don't like it then you can come back to it later.
-
-8. Your resume should now be visible on Github Pages at RepositoryName/FileName. In my case, since I named my resume file `resume.md` and in the main folder of the repository, I was able to access it at `https://nathancarriere.github.io/resume`
+1. 
 
 ### A note on Andrew Etter's *Modern Technical Writing*
 
